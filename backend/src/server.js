@@ -15,7 +15,8 @@ app.use(clerkMiddleware());
 
 app.get("/", (req, res) => res.send("Hello from server"));
 app.use("/api/user", userRoutes);
-app.use("/spi/posts", postRoutes);
+app.use("/api/posts", postRoutes);
+app.use("/api/comments", commentRoutes);
 
 app.use((err, req, res, next) => {
     console.error("Unhandled error:", err);
