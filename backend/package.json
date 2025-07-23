@@ -2,12 +2,14 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js"
   },
   "keywords": [],
-  "author": "",
+  "type": "module",
+  "author": "Aishwarya S",
   "license": "ISC",
   "dependencies": {
     "@arcjet/inspect": "^1.0.0-beta.9",
