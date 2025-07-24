@@ -1,8 +1,7 @@
 import { useSocialAuth } from "@/hooks/useSocialAuth";
-import { useState } from "react";
 import { ActivityIndicator, Image, Text, TouchableOpacity, View } from "react-native";
 
-export default function Index() {
+const Index = () => {
   const { handleSocialAuth, isLoading } = useSocialAuth();
 
   return (
@@ -71,3 +70,5 @@ export default function Index() {
     </View>
   );
 }
+
+export default Index;
