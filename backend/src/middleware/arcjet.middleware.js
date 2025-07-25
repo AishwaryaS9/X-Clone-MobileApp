@@ -5,6 +5,7 @@ export const arcjetMiddleware = async (req, res, next) => {
         const decision = await aj.protect(req, {
             requested: 1,
         })
+        console.log("decision", decision)
         if (decision.isDenied()) {
             if (decision.reason.isRateLimit()) {
                 return res.status(429).json({
