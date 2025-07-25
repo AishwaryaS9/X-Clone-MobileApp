@@ -101,7 +101,7 @@ const MessagesScreen = () => {
             <Modal visible={isChatOpen} animationType='slide'
                 presentationStyle='pageSheet'>
                 {selectedConversation && (
-                    <>
+                    <SafeAreaView className="flex-1">
                         <View className='flex-row items-center px-4 py-3 border-b border-gray-100'>
                             <TouchableOpacity onPress={closeChatModal} className='mr-3'>
                                 <Feather name='arrow-left' size={24} color="#1DA1F2" />
@@ -163,7 +163,7 @@ const MessagesScreen = () => {
                             </TouchableOpacity>
 
                         </View>
-                    </>
+                    </SafeAreaView>
                 )}
 
             </Modal>
