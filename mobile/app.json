@@ -21,7 +21,8 @@
         "CAMERA",
         "READ_EXTERNAL_STORAGE",
         "WRITE_EXTERNAL_STORAGE"
-      ]
+      ],
+      "package": "com.xclone.app"
     },
     "web": {
       "bundler": "metro",
@@ -42,6 +43,12 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "43396d0a-6638-42d4-a106-64f3a728dbc2"
+      }
     }
   }
 }
